@@ -25,7 +25,7 @@ export default {
         password: this.password
       }
 
-      fetch('http://hr.test/login.php', {
+      fetch(process.env.API_URL + '/login.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
